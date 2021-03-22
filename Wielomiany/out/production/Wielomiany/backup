@@ -1,0 +1,98 @@
+ /*else if((matcher.group(1) == "+" || matcher.group(1) == null) && matcher.group(3) != null){
+                if(matcher.group(1) == "-")
+                prefix.add(-1);
+                else
+                    prefix.add(1);
+                System.out.println("WHY?????");
+                sufix.add(Integer.parseInt(matcher.group(3)));
+            }else if(matcher.group(1) != null && matcher.group(3) == null){
+                prefix.add(Integer.parseInt(matcher.group(1)));
+                sufix.add(1);
+            }else if(matcher.group(1) == null && matcher.group(3) == null && simple && matcher.group(4) == null){
+                simple = false;
+                prefix.add(1);
+                sufix.add(1);
+            }*/
+
+   //////////////////
+   /*TableModel polynomialModel = new PolynomialModel();
+           JTable table = new JTable(polynomialModel);
+           TableColumn tableColumn = table.getColumnModel().getColumn(2);
+           ColorChooserEditor colorChooserEditor = new ColorChooserEditor();
+           tableColumn.setCellEditor(colorChooserEditor);
+           tableColumn.setCellRenderer(new MyRenderer());
+           coordinateSystem.setPolynomials(((PolynomialModel) polynomialModel).getPolynomials());
+           polynomial.setColor(Color.RED);
+           polynomial.setIsChecked(true);
+           ((PolynomialModel) polynomialModel).addRepaintListener(coordinateSystem);
+           ((PolynomialModel) polynomialModel).getPolynomials().add(polynomial);
+           try {
+               ((PolynomialModel) polynomialModel).getPolynomials().add(new Polynomial("x^3"));
+           } catch (WrongPolynomialException e) {
+               e.printStackTrace();
+           }
+
+           JScrollPane jScrollPane = new JScrollPane();
+           jScrollPane.setViewportView(table);
+
+           JPanel jPanel = new JPanel();
+           JTabbedPane jTabbedPane = new JTabbedPane();
+
+           jTabbedPane.add("Calculator", jPanel);
+           jTabbedPane.add("Polynomial", coordinateSystem);
+           jTabbedPane.setPreferredSize(new Dimension(400,400));
+           this.add(jTabbedPane);*/
+
+           /*JButton plusPolynomial = new JButton("+");
+           plusPolynomial.addActionListener(
+                   new ActionListener() {
+                       @Override
+                       public void actionPerformed(ActionEvent e) {
+                           String str = JOptionPane.showInputDialog("Enter the polynomial");
+                           try{
+                               boolean isAlready = true;
+                               Polynomial polynomial = new Polynomial(str);
+                               for(Polynomial iterator: ((PolynomialModel) polynomialModel).getPolynomials()){
+                                   if(polynomial.compareTo(iterator) == 0)
+                                       isAlready = false;
+                               }
+                               if(isAlready)
+                               ((PolynomialModel) polynomialModel).getPolynomials().add(polynomial);
+                               table.updateUI();
+                           }catch (WrongPolynomialException ex){
+                               JOptionPane.showMessageDialog(JOptionPane.getFrameForComponent(plusPolynomial), "Try again" , "WRONG POLYNOMIAL", JOptionPane.WARNING_MESSAGE);
+                           }
+                       }
+                   }
+           );
+           JButton minusPolynomial = new JButton("-");
+
+           minusPolynomial.addActionListener(
+                   new ActionListener() {
+                       @Override
+                       public void actionPerformed(ActionEvent e) {
+                           String str = JOptionPane.showInputDialog("Enter the polynomial");
+                           try{
+                               Polynomial polynomial = new Polynomial(str);
+                               for(Polynomial iterator : ((PolynomialModel) polynomialModel).getPolynomials()) {
+                                   if (polynomial.compareTo(iterator) == 0)
+                                       polynomial = iterator;
+                               }
+                                ((PolynomialModel) polynomialModel).getPolynomials().remove(polynomial);
+                               table.updateUI();
+                           }catch (WrongPolynomialException ex){
+                               JOptionPane.showMessageDialog(JOptionPane.getFrameForComponent(plusPolynomial), "Try again" , "WRONG POLYNOMIAL", JOptionPane.WARNING_MESSAGE);
+                           }
+                       }
+                   }
+           );*/
+           \\\\\\\\
+
+           g.drawLine(0, 200, 400, 200);
+                   g.drawLine(400, 200, 390, 190);// strzalka przy osi X w gore
+                   g.drawLine(400, 200, 390, 210); // strzalka przy osi X w dol
+                   g.drawLine(200, 0, 200, 400);// 200, 200 srodek ukladu wspolrzednych
+                   g.drawLine(200, 0, 190, 10); // strzalka przy osi Y w lewo
+                   g.drawLine(200, 0, 210, 10); // strzalka przy osi Y w prawo
+
+                   \\\\\\
